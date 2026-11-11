@@ -1,6 +1,6 @@
 const pricingLinks = {
-  solo: "https://t.me/fs_solo_bot",
-  club: "https://t.me/fs_teams_bot",
+  solo: "https://t.me/fs_solo_bot?start=start",
+  club: "https://t.me/fs_teams_bot?start=start",
   vip: "https://t.me/fs_vipp_bot",
 };
 

@@ -52,6 +52,60 @@ section {
   padding: 1px 20px 30px;
 }
 
+.date-offer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(100%, 390px);
+  margin: 0 auto 16px;
+  padding: 14px;
+  border: 1px solid rgba(255, 233, 166, 0.32);
+  border-radius: 16px;
+  background: linear-gradient(120deg, rgba(255, 233, 166, 0.1), rgba(255, 233, 166, 0.02));
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.date-offer-date {
+  flex-shrink: 0;
+  font-family: Oswald, sans-serif;
+  font-size: clamp(32px, 9vw, 42px);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.date-offer-copy {
+  flex: 1;
+  padding-left: 14px;
+  border-left: 1px solid rgba(255, 233, 166, 0.25);
+}
+
+.date-offer-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.date-offer-prices {
+  display: block;
+  color: #e2d9c5;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.date-offer-arrow {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.date-offer:hover,
+.date-offer:focus-visible {
+  border-color: var(--cream);
+}
+
 h1,
 h2,
 h3,
@@ -587,6 +641,19 @@ h3 {
 }
 
 @media (max-width: 360px) {
+  .date-offer {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .date-offer-copy {
+    padding-left: 10px;
+  }
+
+  .date-offer-arrow {
+    display: none;
+  }
+
   h3,
   .price-card h4 {
     font-size: 44px;
